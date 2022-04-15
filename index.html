@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1.0, user-scalable=no" />
         <title>Fallskjermjegetroppen 69/70</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 		<link rel="stylesheet" href="src/leaflet_awesome_number_markers.css" />
@@ -28,7 +28,7 @@
 
 
 var dropsteder = new Array(//elementene er : oppslagstekst, undertekst, lengdegrad, breddegrad
-			["tom","tom",0.0,0.0],//lar index 0 være tom, for enkelhets skyld i formler
+            ["tom","tom",0.0,0.0],//lar index 0 være tom, for enkelhets skyld i formler
             ["Stormyra", "taktisk hopp",69.022,18.53],
             ["Kvitsanden Røros","Våpen og stridsekk",62.5825,11.36],
             ["Flakstadmåsan","taktisk hopp",60.174,11.326],
@@ -71,7 +71,7 @@ var forlegning = new Array(//steder vi har bodd, kortere eller lengre tid
 			)
 		var steder = dropsteder;
 		for (j=1;j<steder.length;j++){
-		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black' })}).addTo(map);
+		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'black' })}).addTo(map);
 		sted.bindPopup("<strong>"+steder[j][0]+"</strong><br>"+steder[j][1]);
 		}
 		var steder = ovelser;
