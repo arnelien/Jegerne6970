@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 		<link rel="stylesheet" href="src/leaflet_awesome_number_markers.css" />
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-		<script src="src/leaflet_awesome_number_markers.ajs"></script>
+		<script src="src/leaflet_awesome_number_markers.js"></script>
     </head>
     <style>
 	body{
@@ -71,7 +71,7 @@ var forlegning = new Array(//steder vi har bodd, kortere eller lengre tid
 			)
 		var steder = dropsteder;
 		for (j=1;j<steder.length;j++){
-		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'black' })}).addTo(map);
+		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'blue' })}).addTo(map);
 		sted.bindPopup("<strong>"+steder[j][0]+"</strong><br>"+steder[j][1]);
 		}
 		var steder = ovelser;
