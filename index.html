@@ -71,7 +71,7 @@ var forlegning = new Array(//steder vi har bodd, kortere eller lengre tid
 			)
 		var steder = dropsteder;
 		for (j=1;j<steder.length;j++){
-		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'black' })}).addTo(map);
+		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'darkblue' })}).addTo(map);
 		sted.bindPopup("<strong>"+steder[j][0]+"</strong><br>"+steder[j][1]);
 		}
 		var steder = ovelser;
