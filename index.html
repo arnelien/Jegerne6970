@@ -46,7 +46,7 @@ var dropsteder = new Array(//elementene er : oppslagstekst, undertekst, lengdegr
             ["Skaidi bru","taktisk hopp",70.43,24.50],
             ["Grøndalen","taktisk hopp",62.15,9.128],
             ["Gardermoen","treningshopping og demo",60.19,11.11],
-            ["Aursletta","Treningsfeltet",60.23,11.11],
+            ["Aursletta","Treningsfeltet",60.22644,11.11299],
 			)
 var ovelser = new Array(//steder vi har trent eller hatt øvelser uten å hoppe
 			["tom",0.0,0.0],
@@ -71,7 +71,7 @@ var forlegning = new Array(//steder vi har bodd, kortere eller lengre tid
 			)
 		var steder = dropsteder;
 		for (j=1;j<steder.length;j++){
-		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'darkblue' })}).addTo(map);
+		var sted = L.marker([steder[j][2], steder[j][3]], {icon: new L.AwesomeNumberMarkers({number: j, markerColor: 'black',numberColor:'darkred' })}).addTo(map);
 		sted.bindPopup("<strong>"+steder[j][0]+"</strong><br>"+steder[j][1]);
 		}
 		var steder = ovelser;
